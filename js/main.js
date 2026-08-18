@@ -9,13 +9,11 @@
 // 1. BUSINESS CONFIGURATION (Easy to edit)
 // ==========================================
 const CONFIG = {
-  // Replace with your actual WhatsApp phone number (with country code, e.g. "919876543210")
-  whatsappNumber: "YOUR_WHATSAPP_NUMBER",
-  
-  // Display Information Placeholders
-  phoneNumber: "+91 98765 43210", // [ADD PHONE NUMBER]
-  emailAddress: "info@sharanyamarbles.com", // [ADD EMAIL]
-  businessLocation: "Bangalore, Karnataka, India", // [ADD BUSINESS LOCATION]
+  // Sharanya Marbles WhatsApp & Phone Number
+  whatsappNumber: "917981478570",
+  phoneNumber: "+91 79814 78570",
+  emailAddress: "info@sharanyamarbles.com",
+  businessLocation: "Madhapur, Hyderabad, Telangana, India",
   
   // Default WhatsApp Inquire Message
   defaultMessage: "Hello Sharanya Marbles, I would like to enquire about your services."

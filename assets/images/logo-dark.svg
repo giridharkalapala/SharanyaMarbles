@@ -1,48 +1,106 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 160" width="100%" height="100%">
   <defs>
-    <linearGradient id="goldLinearD" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#C9A227" />
-      <stop offset="30%" stop-color="#E5C76B" />
-      <stop offset="70%" stop-color="#C9A227" />
-      <stop offset="100%" stop-color="#8F6E0B" />
+    <!-- Logo Gold Gradient -->
+    <linearGradient id="logoGoldD" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DFB96C" />
+      <stop offset="35%" stop-color="#C5A059" />
+      <stop offset="70%" stop-color="#E8CF94" />
+      <stop offset="100%" stop-color="#9A782F" />
     </linearGradient>
-    <linearGradient id="navyGradD" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0B1B33" />
-      <stop offset="100%" stop-color="#132644" />
+
+    <!-- Carrara White Tile Gradient -->
+    <linearGradient id="carraraTileD" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="70%" stop-color="#F1F5F9" />
+      <stop offset="100%" stop-color="#E2E8F0" />
+    </linearGradient>
+
+    <!-- Marquina Black Tile Gradient -->
+    <linearGradient id="marquinaTileD" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+
+    <!-- Granite Grey Tile Gradient -->
+    <linearGradient id="graniteTileD" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#CBD5E1" />
+      <stop offset="100%" stop-color="#94A3B8" />
     </linearGradient>
   </defs>
 
-  <!-- LOGO EMBLEM (Left side) -->
-  <g transform="translate(10, 10)">
-    <polygon points="50,2 92,20 100,50 92,80 50,98 8,80 0,50 8,20" fill="url(#navyGradD)" stroke="url(#goldLinearD)" stroke-width="2.5" />
-    <polygon points="50,8 86,24 93,50 86,76 50,92 14,76 7,50 14,24" fill="#061224" stroke="url(#goldLinearD)" stroke-width="0.8" stroke-dasharray="3 1" />
-    <path d="M 18,32 Q 35,45 42,30 T 78,40" fill="none" stroke="#C9A227" stroke-width="0.6" opacity="0.4" />
-    <path d="M 22,68 Q 45,55 58,72 T 84,60" fill="none" stroke="#C9A227" stroke-width="0.5" opacity="0.35" />
-
-    <path d="M 64,32 C 60,26 42,24 36,32 C 30,40 38,46 50,50 C 66,55 70,62 64,72 C 58,80 38,78 32,70" fill="none" stroke="url(#goldLinearD)" stroke-width="4.5" stroke-linecap="round" />
+  <!-- ================= EMBLEM (Left) ================= -->
+  <g transform="translate(10, 8)">
+    <!-- Golden Outer Arc -->
+    <path d="M 70,12 A 65,65 0 1 0 125,105" fill="none" stroke="url(#logoGoldD)" stroke-width="4.5" stroke-linecap="round" />
     
-    <polygon points="50,15 54,20 50,25 46,20" fill="#C9A227" />
-    <polygon points="50,75 54,80 50,85 46,80" fill="#C9A227" />
-    <polygon points="20,50 24,54 20,58 16,54" fill="#C9A227" opacity="0.8" />
-    <polygon points="80,50 84,54 80,58 76,54" fill="#C9A227" opacity="0.8" />
+    <!-- House Roof Contour & Window Grid -->
+    <path d="M 68,36 L 102,18 L 136,36" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.9" />
+    <!-- 4-Pane Window -->
+    <g transform="translate(97, 36)" fill="url(#logoGoldD)">
+      <rect x="0" y="0" width="4.5" height="4.5" rx="0.5" />
+      <rect x="6" y="0" width="4.5" height="4.5" rx="0.5" />
+      <rect x="0" y="6" width="4.5" height="4.5" rx="0.5" />
+      <rect x="6" y="6" width="4.5" height="4.5" rx="0.5" />
+    </g>
+
+    <!-- Marble Tile Slabs -->
+    <!-- Tile 1: White Carrara -->
+    <polygon points="32,60 42,52 42,122 32,122" fill="url(#carraraTileD)" stroke="#CBD5E1" stroke-width="0.8" />
+    
+    <!-- Tile 2: Black Nero Marquina -->
+    <polygon points="44,50 56,41 56,122 44,122" fill="url(#marquinaTileD)" stroke="#64748B" stroke-width="0.5" />
+
+    <!-- Tile 3: Grey Granite -->
+    <polygon points="58,39 70,30 70,122 58,122" fill="url(#graniteTileD)" />
+
+    <!-- Stylized 'S' Monogram in Crisp White -->
+    <path d="M 88,40 C 72,30 52,36 53,56 C 54,72 84,74 84,94 C 84,112 60,112 50,100" fill="none" stroke="#FFFFFF" stroke-width="6.5" stroke-linecap="round" />
+
+    <!-- Opulent Golden Serif 'M' -->
+    <g transform="translate(74, 46)">
+      <path d="M 8,76 L 8,30 L 24,58 L 40,30 L 40,76" fill="none" stroke="url(#logoGoldD)" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+      <polygon points="4,76 12,76 12,72 4,72" fill="url(#logoGoldD)" />
+      <polygon points="36,76 44,76 44,72 36,72" fill="url(#logoGoldD)" />
+    </g>
   </g>
 
-  <!-- BRAND NAME & TYPOGRAPHY FOR LIGHT BACKGROUND -->
-  <g transform="translate(130, 20)">
-    <text x="0" y="46" font-family="'Cinzel', 'Playfair Display', 'Georgia', serif" font-size="36" font-weight="700" letter-spacing="4" fill="url(#goldLinearD)">
+  <!-- ================= TYPOGRAPHY (Right) ================= -->
+  <g transform="translate(175, 10)">
+    <!-- 1. SHARANYA Wordmark (White on Dark) -->
+    <text x="0" y="58" font-family="'Cinzel', 'Playfair Display', 'Georgia', serif" font-size="52" font-weight="700" letter-spacing="4.5" fill="#FFFFFF">
       SHARANYA
     </text>
 
-    <text x="248" y="46" font-family="'Cinzel', 'Playfair Display', 'Georgia', serif" font-size="36" font-weight="400" letter-spacing="4" fill="#0B1B33">
-      MARBLES
-    </text>
+    <!-- 2. MARBLES with Horizontal Accent Rules -->
+    <g transform="translate(0, 92)">
+      <!-- Left Tapered Rule -->
+      <line x1="0" y1="-8" x2="65" y2="-8" stroke="url(#logoGoldD)" stroke-width="2" stroke-linecap="round" />
+      
+      <!-- MARBLES Wordmark -->
+      <text x="80" y="0" font-family="'Cinzel', 'Playfair Display', 'Georgia', serif" font-size="28" font-weight="600" letter-spacing="14" fill="url(#logoGoldD)">
+        MARBLES
+      </text>
 
-    <line x1="0" y1="62" x2="165" y2="62" stroke="url(#goldLinearD)" stroke-width="1.2" opacity="0.8" />
-    <polygon points="175,62 178,59 181,62 178,65" fill="#C9A227" />
-    <line x1="191" y1="62" x2="365" y2="62" stroke="url(#goldLinearD)" stroke-width="1.2" opacity="0.8" />
+      <!-- Right Tapered Rule -->
+      <line x1="390" y1="-8" x2="455" y2="-8" stroke="url(#logoGoldD)" stroke-width="2" stroke-linecap="round" />
+    </g>
 
-    <text x="2" y="78" font-family="'Outfit', 'Plus Jakarta Sans', 'Segoe UI', sans-serif" font-size="10.5" font-weight="700" letter-spacing="3.2" fill="#0B1B33">
-      QUALITY YOU SEE, SERVICE YOU TRUST
-    </text>
+    <!-- 3. Primary Services Line -->
+    <g transform="translate(0, 118)" font-family="'Outfit', 'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" letter-spacing="2.2" fill="#E2E8F0">
+      <text x="0" y="0">TILES FITTING</text>
+      <text x="120" y="0" fill="url(#logoGoldD)" font-weight="400">|</text>
+      <text x="135" y="0">MARBLE POLISHING</text>
+      <text x="310" y="0" fill="url(#logoGoldD)" font-weight="400">|</text>
+      <text x="325" y="0">GRANITE FITTING</text>
+    </g>
+
+    <!-- 4. Bottom Cleaning & Polish Services Line with rules -->
+    <g transform="translate(0, 140)">
+      <line x1="30" y1="-4" x2="85" y2="-4" stroke="url(#logoGoldD)" stroke-width="1" opacity="0.6" />
+      <text x="98" y="0" font-family="'Outfit', 'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="700" letter-spacing="2.5" fill="#DFB96C">
+        CLEANING AND POLISH SERVICES
+      </text>
+      <line x1="370" y1="-4" x2="425" y2="-4" stroke="url(#logoGoldD)" stroke-width="1" opacity="0.6" />
+    </g>
   </g>
 </svg>
