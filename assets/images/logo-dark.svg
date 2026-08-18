@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="goldLinearD" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C9A227" />
+      <stop offset="30%" stop-color="#E5C76B" />
+      <stop offset="70%" stop-color="#C9A227" />
+      <stop offset="100%" stop-color="#8F6E0B" />
+    </linearGradient>
+    <linearGradient id="navyGradD" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1B33" />
+      <stop offset="100%" stop-color="#132644" />
+    </linearGradient>
+  </defs>
+
+  <!-- LOGO EMBLEM (Left side) -->
+  <g transform="translate(10, 10)">
+    <polygon points="50,2 92,20 100,50 92,80 50,98 8,80 0,50 8,20" fill="url(#navyGradD)" stroke="url(#goldLinearD)" stroke-width="2.5" />
+    <polygon points="50,8 86,24 93,50 86,76 50,92 14,76 7,50 14,24" fill="#061224" stroke="url(#goldLinearD)" stroke-width="0.8" stroke-dasharray="3 1" />
+    <path d="M 18,32 Q 35,45 42,30 T 78,40" fill="none" stroke="#C9A227" stroke-width="0.6" opacity="0.4" />
+    <path d="M 22,68 Q 45,55 58,72 T 84,60" fill="none" stroke="#C9A227" stroke-width="0.5" opacity="0.35" />
+
+    <path d="M 64,32 C 60,26 42,24 36,32 C 30,40 38,46 50,50 C 66,55 70,62 64,72 C 58,80 38,78 32,70" fill="none" stroke="url(#goldLinearD)" stroke-width="4.5" stroke-linecap="round" />
+    
+    <polygon points="50,15 54,20 50,25 46,20" fill="#C9A227" />
+    <polygon points="50,75 54,80 50,85 46,80" fill="#C9A227" />
+    <polygon points="20,50 24,54 20,58 16,54" fill="#C9A227" opacity="0.8" />
+    <polygon points="80,50 84,54 80,58 76,54" fill="#C9A227" opacity="0.8" />
+  </g>
+
+  <!-- BRAND NAME & TYPOGRAPHY FOR LIGHT BACKGROUND -->
+  <g transform="translate(130, 20)">
+    <text x="0" y="46" font-family="'Cinzel', 'Playfair Display', 'Georgia', serif" font-size="36" font-weight="700" letter-spacing="4" fill="url(#goldLinearD)">
+      SHARANYA
+    </text>
+
+    <text x="248" y="46" font-family="'Cinzel', 'Playfair Display', 'Georgia', serif" font-size="36" font-weight="400" letter-spacing="4" fill="#0B1B33">
+      MARBLES
+    </text>
+
+    <line x1="0" y1="62" x2="165" y2="62" stroke="url(#goldLinearD)" stroke-width="1.2" opacity="0.8" />
+    <polygon points="175,62 178,59 181,62 178,65" fill="#C9A227" />
+    <line x1="191" y1="62" x2="365" y2="62" stroke="url(#goldLinearD)" stroke-width="1.2" opacity="0.8" />
+
+    <text x="2" y="78" font-family="'Outfit', 'Plus Jakarta Sans', 'Segoe UI', sans-serif" font-size="10.5" font-weight="700" letter-spacing="3.2" fill="#0B1B33">
+      QUALITY YOU SEE, SERVICE YOU TRUST
+    </text>
+  </g>
+</svg>

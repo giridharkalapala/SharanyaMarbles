@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Sharanya Marbles - Luxury Marble, Granite & Tile Portfolio</title>
+  <meta name="description" content="Explore our gallery of finished projects: Italian marble flooring, granite kitchen countertops, designer tile installations, and mirror-finish polishing.">
+  <meta name="keywords" content="Sharanya Marbles gallery, marble floor photos, granite kitchen photos, tile fitting portfolio, stone polishing before and after">
+  <link rel="canonical" href="gallery.html">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Font Awesome 6 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <aside class="top-bar">
+    <div class="container">
+      <div class="top-info">
+        <div class="top-info-item">
+          <i class="fas fa-phone-alt"></i>
+          <a href="tel:+919876543210">[ADD PHONE NUMBER]</a>
+        </div>
+        <div class="top-info-item">
+          <i class="fab fa-whatsapp"></i>
+          <a href="#" class="whatsapp-trigger" data-message="Hello Sharanya Marbles, I would like to enquire about your services.">[ADD WHATSAPP NUMBER]</a>
+        </div>
+        <div class="top-info-item">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:info@sharanyamarbles.com">[ADD EMAIL]</a>
+        </div>
+        <div class="top-info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>[ADD BUSINESS LOCATION]</span>
+        </div>
+      </div>
+      <div class="top-social">
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="whatsapp-trigger" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <img src="assets/images/logo.svg" alt="Sharanya Marbles Logo" class="brand-logo">
+      </a>
+
+      <nav class="navbar-menu">
+        <a href="index.html" class="nav-link">HOME</a>
+        <a href="about.html" class="nav-link">ABOUT</a>
+        <a href="services.html" class="nav-link">SERVICES</a>
+        <a href="gallery.html" class="nav-link active">GALLERY</a>
+        <a href="contact.html" class="nav-link">CONTACT</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-gold btn-sm open-quote-modal">
+          <span>GET A QUOTE</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <button class="nav-toggle" aria-label="Toggle Navigation Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-overlay"></div>
+  <div class="mobile-drawer">
+    <div>
+      <div style="margin-bottom: 30px;">
+        <img src="assets/images/logo.svg" alt="Sharanya Marbles" style="height: 44px;">
+      </div>
+      <div class="mobile-nav-links">
+        <a href="index.html" class="nav-link">HOME</a>
+        <a href="about.html" class="nav-link">ABOUT</a>
+        <a href="services.html" class="nav-link">SERVICES</a>
+        <a href="gallery.html" class="nav-link active">GALLERY</a>
+        <a href="contact.html" class="nav-link">CONTACT</a>
+      </div>
+    </div>
+    <div class="mobile-drawer-footer">
+      <a href="contact.html" class="btn btn-gold btn-block open-quote-modal" style="width: 100%; margin-bottom: 15px;">
+        <span>GET A FREE QUOTE</span>
+      </a>
+      <div style="font-size: 0.85rem; color: rgba(255,255,255,0.7); text-align: center;">
+        <p><i class="fas fa-phone-alt text-gold"></i> [ADD PHONE NUMBER]</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page Hero Banner -->
+  <section class="page-banner">
+    <div class="container">
+      <div class="section-tag" style="color: var(--gold-light);">VISUAL SHOWCASE</div>
+      <h1 class="page-banner-title">Our Project Portfolio</h1>
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a>
+        <i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i>
+        <span>Gallery</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       GALLERY FILTERS & MASONRY
+       ========================================== -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">CRAFTED FOR PERFECTION</div>
+        <h2 class="section-title">Discover Our Completed Projects</h2>
+        <div class="section-divider">
+          <div class="divider-line"></div>
+          <div class="divider-diamond"></div>
+          <div class="divider-line"></div>
+        </div>
+        <p class="section-description">
+          Filter through our luxury marble flooring, granite kitchen islands, spa tile fittings, and mirror-shine restorations.
+        </p>
+      </div>
+
+      <!-- Filter Categories -->
+      <div class="gallery-filters">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="marble">Marble</button>
+        <button class="filter-btn" data-filter="granite">Granite</button>
+        <button class="filter-btn" data-filter="tiles">Tiles</button>
+        <button class="filter-btn" data-filter="flooring">Flooring</button>
+        <button class="filter-btn" data-filter="kitchen">Kitchen</button>
+        <button class="filter-btn" data-filter="staircase">Staircase</button>
+        <button class="filter-btn" data-filter="polishing">Polishing</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid">
+        <!-- 1. Marble Living Room -->
+        <div class="gallery-item reveal" data-category="marble">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80" alt="Italian Statuario Marble Living Room">
+          <div class="gallery-overlay">
+            <span class="gallery-item-tag">Marble • Flooring</span>
+            <h4 class="gallery-item-title">Italian Statuario Luxury Living Room</h4>
+          </div>
+          <div class="gallery-zoom-icon"><i class="fas fa-search-plus"></i></div>
+        </div>
+
+        <!-- 2. Kitchen Granite Island -->
+        <div class="gallery-item reveal" data-category="kitchen">
+          <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=900&q=80" alt="Waterfall Edge Granite Countertop">
+          <div class="gallery-overlay">
+            <span class="gallery-item-tag">Granite • Kitchen</span>
+            <h4 class="gallery-item-title">Waterfall Edge Granite Countertop</h4>
+          </div>
+          <div class="gallery-zoom-icon"><i class="fas fa-search-plus"></i></div>
+        </div>
+
+        <!-- 3. Diamond Polished Floor -->
+        <div class="gallery-item reveal" data-category="polishing">
+          <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=900&q=80" alt="Diamond Polish Mirror Restoration">
+          <div class="gallery-overlay">
+            <span class="gallery-item-tag">Polishing • Restoration</span>
+            <h4 class="gallery-item-title">Diamond Polish Mirror Restoration</h4>
+          </div>
+          <div class="gallery-zoom-icon"><i class="fas fa-search-plus"></i></div>
+        </div>
+
+        <!-- 4. Bathroom Tiles -->
+        <div class="gallery-item reveal" data-category="tiles">
+          <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=900&q=80" alt="Designer Spa Bathroom Tile Fitting">
+          <div class="gallery-overlay">
+            <span class="gallery-item-tag">Tiles • Bathroom</span>
+            <h4 class="gallery-item-title">Designer Spa Bathroom Tile Fitting</h4>
+          </div>
+          <div class="gallery-zoom-icon"><i class="fas fa-search-plus"></i></div>
+        </div>
+
+        <!-- 5. Granite Staircase -->
+        <div class="gallery-item reveal" data-category="staircase">
+          <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=900&q=80" alt="Grand Marble & Granite Staircase">
+          <div class="gallery-overlay">
+            <span class="gallery-item-tag">Staircase • Granite</span>
+            <h4 class="gallery-item-title">Grand Marble & Granite Staircase</h4>
+          </div>
+          <div class="gallery-zoom-icon"><i class="fas fa-search-plus"></i></div>
+        </div>
+
+        <!-- 6. Commercial Flooring -->
+        <div class="gallery-item reveal" data-category="flooring">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80" alt="Corporate Lobby Polished Marble">
+          <div class="gallery-overlay">
+            <span class="gallery-item-tag">Flooring • Commercial</span>
+            <h4 class="gallery-item-title">Corporate Lobby Polished Marble</h4>
+          </div>
+          <div class="gallery-zoom-icon"><i class="fas fa-search-plus"></i></div>
+        </div>
+
+        <!-- 7. Calacatta Marble Bathroom Wall -->
+        <div class="gallery-item reveal" data-category="marble">
+          <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=900&q=80" alt="Bookmatched Calacatta Marble Bathroom">
+          <div class="gallery-overlay">
+            <span class="gallery-item-tag">Marble • Bathroom</span>
+            <h4 class="gallery-item-title">Bookmatched Calacatta Bathroom Feature</h4>
+          </div>
+          <div class="gallery-zoom-icon"><i class="fas fa-search-plus"></i></div>
+        </div>
+
+        <!-- 8. Modern Kitchen Granite -->
+        <div class="gallery-item reveal" data-category="granite">
+          <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=900&q=80" alt="Jet Black Granite Kitchen Tops">
+          <div class="gallery-overlay">
+            <span class="gallery-item-tag">Granite • Kitchen</span>
+            <h4 class="gallery-item-title">Jet Black Granite Countertops</h4>
+          </div>
+          <div class="gallery-zoom-icon"><i class="fas fa-search-plus"></i></div>
+        </div>
+
+        <!-- 9. Vitrified Floor Tiles -->
+        <div class="gallery-item reveal" data-category="tiles">
+          <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=900&q=80" alt="Seamless Vitrified Floor Tile Fitting">
+          <div class="gallery-overlay">
+            <span class="gallery-item-tag">Tiles • Flooring</span>
+            <h4 class="gallery-item-title">Seamless Vitrified Tile Installation</h4>
+          </div>
+          <div class="gallery-zoom-icon"><i class="fas fa-search-plus"></i></div>
+        </div>
+
+        <!-- 10. Floating Staircase -->
+        <div class="gallery-item reveal" data-category="staircase">
+          <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=900&q=80" alt="Cantilevered Marble Staircase">
+          <div class="gallery-overlay">
+            <span class="gallery-item-tag">Staircase • Marble</span>
+            <h4 class="gallery-item-title">Cantilevered Marble Staircase</h4>
+          </div>
+          <div class="gallery-zoom-icon"><i class="fas fa-search-plus"></i></div>
+        </div>
+
+        <!-- 11. High Gloss Polishing -->
+        <div class="gallery-item reveal" data-category="polishing">
+          <img src="https://images.unsplash.com/photo-1541123437800-1bb1317badc2?auto=format&fit=crop&w=900&q=80" alt="Italian Crystallization Polish Finish">
+          <div class="gallery-overlay">
+            <span class="gallery-item-tag">Polishing • Flooring</span>
+            <h4 class="gallery-item-title">Italian Crystallization Gloss Finish</h4>
+          </div>
+          <div class="gallery-zoom-icon"><i class="fas fa-search-plus"></i></div>
+        </div>
+
+        <!-- 12. Open Plan Living Floor -->
+        <div class="gallery-item reveal" data-category="flooring">
+          <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=80" alt="Palatial Marble Living Hall">
+          <div class="gallery-overlay">
+            <span class="gallery-item-tag">Flooring • Marble</span>
+            <h4 class="gallery-item-title">Palatial Marble Living Hall</h4>
+          </div>
+          <div class="gallery-zoom-icon"><i class="fas fa-search-plus"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       BEFORE / AFTER COMPARISON SECTION
+       ========================================== -->
+  <section class="section bg-navy">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">TRANSFORMATION SHOWCASE</div>
+        <h2 class="section-title">Restore the Original Beauty of Your Stone</h2>
+        <div class="section-divider">
+          <div class="divider-line"></div>
+          <div class="divider-diamond"></div>
+          <div class="divider-line"></div>
+        </div>
+        <p class="section-description">
+          Professional polishing can bring back the shine and finish of worn marble surfaces. Drag the slider to compare before and after results.
+        </p>
+      </div>
+
+      <div class="before-after-wrapper reveal">
+        <div class="before-after-slider-container">
+          <img src="https://images.unsplash.com/photo-1541123437800-1bb1317badc2?auto=format&fit=crop&w=1200&q=80" alt="Before Stone Restoration" class="before-img">
+          <div class="slider-label label-before">BEFORE RESTORATION</div>
+
+          <div class="after-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=80" alt="After Diamond Polish" class="after-img">
+            <div class="slider-label label-after">AFTER SHARANYA POLISH</div>
+          </div>
+
+          <div class="slider-handle">
+            <div class="slider-handle-button">
+              <i class="fas fa-arrows-alt-h"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="before-after-info">
+          <span><i class="fas fa-hand-pointer text-gold"></i> Drag or swipe horizontally to compare</span>
+          <span><i class="fas fa-gem text-gold"></i> High-Gloss Mirror Reflection</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal">
+    <div class="lightbox-close"><i class="fas fa-times"></i></div>
+    <div class="lightbox-nav lightbox-prev"><i class="fas fa-chevron-left"></i></div>
+    <div class="lightbox-nav lightbox-next"><i class="fas fa-chevron-right"></i></div>
+    <div class="lightbox-content">
+      <div class="lightbox-image-wrapper">
+        <img src="" alt="Full Project View" class="lightbox-image">
+      </div>
+      <div class="lightbox-caption">Project View</div>
+      <div class="lightbox-counter">1 / 12</div>
+    </div>
+  </div>
+
+  <!-- CTA Banner -->
+  <section class="section bg-white" id="cta">
+    <div class="container">
+      <div class="cta-box reveal" style="background: var(--navy);">
+        <div class="section-tag">LIKE WHAT YOU SEE?</div>
+        <h2 class="section-title">Let Us Craft a Custom Solution For You</h2>
+        <p>Contact our project team today to discuss stone varieties, finishes, and project timelines.</p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn btn-gold btn-lg open-quote-modal">
+            <span>Get a Free Quote</span>
+            <i class="fas fa-paper-plane"></i>
+          </a>
+          <a href="#" class="btn btn-outline-gold btn-lg whatsapp-trigger" data-message="Hello Sharanya Marbles, I saw your portfolio and would like to get a quote.">
+            <span>Chat on WhatsApp</span>
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/logo.svg" alt="Sharanya Marbles Logo">
+          <div class="footer-tagline">QUALITY YOU SEE, SERVICE YOU TRUST</div>
+          <p class="footer-about-text">
+            Sharanya Marbles is a premier stone craftsmanship and restoration company delivering high-end tile fitting, diamond marble polishing, and granite installations.
+          </p>
+          <div class="footer-social-links">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="whatsapp-trigger" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <div class="footer-links-list">
+            <a href="index.html"><i class="fas fa-chevron-right"></i> Home</a>
+            <a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a>
+            <a href="services.html"><i class="fas fa-chevron-right"></i> Our Services</a>
+            <a href="gallery.html"><i class="fas fa-chevron-right"></i> Gallery Portfolio</a>
+            <a href="contact.html"><i class="fas fa-chevron-right"></i> Contact & Quote</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Our Services</h4>
+          <div class="footer-links-list">
+            <a href="services.html#tiles"><i class="fas fa-chevron-right"></i> Tiles Fitting</a>
+            <a href="services.html#polishing"><i class="fas fa-chevron-right"></i> Marble Polishing</a>
+            <a href="services.html#granite"><i class="fas fa-chevron-right"></i> Granite Fitting</a>
+            <a href="services.html#cleaning"><i class="fas fa-chevron-right"></i> Cleaning & Polishing</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <div>
+              <div style="font-weight: 600; color: #fff;">Phone</div>
+              <a href="tel:+919876543210">[ADD PHONE NUMBER]</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fab fa-whatsapp"></i>
+            <div>
+              <div style="font-weight: 600; color: #fff;">WhatsApp</div>
+              <a href="#" class="whatsapp-trigger">[ADD WHATSAPP NUMBER]</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <div style="font-weight: 600; color: #fff;">Email</div>
+              <a href="mailto:info@sharanyamarbles.com">[ADD EMAIL]</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <div style="font-weight: 600; color: #fff;">Location</div>
+              <span>[ADD BUSINESS LOCATION]</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 <strong>SHARANYA MARBLES</strong>. All Rights Reserved.</div>
+        <div>Tagline: <em>Quality You See, Service You Trust</em></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp & Scroll to Top -->
+  <a href="#" class="floating-whatsapp whatsapp-trigger" aria-label="Chat on WhatsApp" data-message="Hello Sharanya Marbles, I would like to enquire about your services.">
+    <i class="fab fa-whatsapp"></i>
+    <div class="whatsapp-tooltip">Chat with Sharanya Marbles</div>
+  </a>
+
+  <button class="scroll-to-top" aria-label="Scroll to Top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Quick Quote Modal -->
+  <div class="quote-modal">
+    <div class="quote-modal-dialog">
+      <button class="quote-modal-close" aria-label="Close Modal"><i class="fas fa-times"></i></button>
+      <div class="section-tag" style="margin-bottom: 6px;">FREE ESTIMATE</div>
+      <h3 class="form-title">Request a Quote</h3>
+      <p class="form-subtitle">Fill in your requirements below for an instant stone consultation.</p>
+
+      <form class="needs-validation" novalidate>
+        <div class="form-group">
+          <label class="form-label">Full Name *</label>
+          <input type="text" class="form-control" placeholder="Your Name" required>
+          <div class="invalid-feedback">Please enter your full name.</div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Phone Number *</label>
+            <input type="tel" class="form-control" placeholder="10-digit mobile number" required>
+            <div class="invalid-feedback">Please enter a valid phone number.</div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email Address *</label>
+            <input type="email" class="form-control" placeholder="name@example.com" required>
+            <div class="invalid-feedback">Please enter a valid email.</div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Service Required *</label>
+          <select class="form-control" name="service" required>
+            <option value="">-- Select Required Service --</option>
+            <option value="Tiles Fitting">Tiles Fitting</option>
+            <option value="Marble Polishing">Marble Polishing</option>
+            <option value="Granite Fitting">Granite Fitting</option>
+            <option value="Cleaning & Polishing Services">Cleaning & Polishing Services</option>
+          </select>
+          <div class="invalid-feedback">Please choose a service.</div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Project Details / Area Size</label>
+          <textarea class="form-control" placeholder="E.g., Living Room Italian Marble in Bangalore" rows="3" required></textarea>
+          <div class="invalid-feedback">Please provide basic project details.</div>
+        </div>
+
+        <button type="submit" class="btn btn-gold btn-block" style="width: 100%;">
+          <span>Submit Quotation Request</span>
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

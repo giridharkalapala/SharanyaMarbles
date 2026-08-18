@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <defs>
+    <filter id="marbleNoise" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.015 0.008" numOctaves="4" seed="23" result="noise" />
+      <feColorMatrix type="matrix" values="
+        1 0 0 0 0.96
+        0 1 0 0 0.96
+        0 0 1 0 0.95
+        0 0 0 0.08 0" />
+    </filter>
+  </defs>
+  <rect width="600" height="600" fill="#F8F8F6" />
+  <rect width="600" height="600" filter="url(#marbleNoise)" opacity="0.75" />
+  <!-- Subtle Gold & Slate Marble Vein Paths -->
+  <path d="M-50,120 Q120,180 250,110 T520,240 T650,190" fill="none" stroke="#C9A227" stroke-width="1.2" opacity="0.22" stroke-linecap="round" />
+  <path d="M-20,135 Q140,210 270,130 T540,265" fill="none" stroke="#A3B1C2" stroke-width="0.8" opacity="0.3" />
+  <path d="M100,-50 Q220,140 180,320 T360,540 T420,650" fill="none" stroke="#C9A227" stroke-width="1" opacity="0.18" />
+  <path d="M80,480 Q240,400 380,490 T620,410" fill="none" stroke="#C0A040" stroke-width="0.9" opacity="0.25" />
+  <path d="M300,-20 Q410,180 490,290 T560,580" fill="none" stroke="#90A4AE" stroke-width="0.7" opacity="0.28" />
+</svg>

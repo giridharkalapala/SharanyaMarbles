@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="darkBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1B33" />
+      <stop offset="50%" stop-color="#0E2240" />
+      <stop offset="100%" stop-color="#061224" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#darkBg)" />
+  <!-- Gold and Silver Veins across Dark Navy Stone -->
+  <path d="M-50,80 Q140,160 280,90 T560,200 T650,150" fill="none" stroke="#C9A227" stroke-width="1.2" opacity="0.3" stroke-linecap="round" />
+  <path d="M-30,95 Q160,185 300,110 T580,225" fill="none" stroke="#E5C76B" stroke-width="0.6" opacity="0.25" />
+  <path d="M120,-50 Q260,180 200,380 T400,560 T460,650" fill="none" stroke="#C9A227" stroke-width="1" opacity="0.22" />
+  <path d="M60,460 Q220,380 400,470 T640,380" fill="none" stroke="#4A6588" stroke-width="1" opacity="0.35" />
+  <path d="M280,-20 Q440,200 510,320 T580,590" fill="none" stroke="#E5C76B" stroke-width="0.8" opacity="0.2" />
+</svg>
